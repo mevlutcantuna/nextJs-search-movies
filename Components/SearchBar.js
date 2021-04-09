@@ -41,6 +41,7 @@ function SearchBar(props) {
 }
 
 const mapDispatchToProps = (dispatch) => {
+    console.log(dispatch);
     return{
         getSearchData : (name,year,type) => dispatch(getSearchData(name,year,type))
     }

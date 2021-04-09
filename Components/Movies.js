@@ -10,7 +10,7 @@ function Movies(props) {
     <div>
           <div style={{display:'flex',flexDirection:'column'}}>
               {movies.map((item) => (
-                  <div>{item.Title}</div>
+                  <div key={item.imdbID}>{item.Title}</div>
               ))}
           </div>
     </div>

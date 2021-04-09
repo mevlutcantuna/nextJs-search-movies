@@ -16,7 +16,7 @@ export const SearchReducer = (state=INITIALSTATE,action) => {
         case HANDLECHANGE.HANDLE_YEAR:
             return {...state,year:action.payload};
         case GETSEARCHMOVIES.GET_MOVIES_SUCCESS:
-//            console.log(action.payload.data.Search)
+            console.log(action.payload.data.Search)
             return {...state,search: action.payload.data.Search};
         default:
             return state;
